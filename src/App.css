@@ -1,0 +1,40 @@
+.products-list {
+  box-sizing: border-box;
+  border: 10px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.filterable-products-list {
+  display: flex;
+}
+
+.product-item {
+  box-sizing: border-box;
+  border: 10px solid red;
+  flex: 1 0 400px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.filters-panel {
+  border: 10px solid blue;
+}
+
+.filters-list {
+  border: 10px solid green;
+}
+
+.search-bar {
+  border: 10px solid orange;
+}
+
+.filters-category {
+  border: 10px solid rebeccapurple;
+}

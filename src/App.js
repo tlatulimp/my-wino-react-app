@@ -116,7 +116,7 @@ class App extends Component {
         }
       }
     ],
-    categories: [
+    filteringCategories: [
       'vintage',
       'color',
       'region',
@@ -130,7 +130,7 @@ class App extends Component {
 
   render() {
     return (
-      <FilterableProductsList products={this.data.products} categories={this.data.categories}/>
+      <FilterableProductsList {...this.data}/>
     );
   }
 }

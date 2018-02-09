@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import FiltersList from './FiltersList';
 import SearchBar from './SearchBar';
 
-class FiltersPanel extends Component {
+export default class FiltersPanel extends Component {
 
   constructor(props) {
     super(props);
@@ -12,10 +12,8 @@ class FiltersPanel extends Component {
     return (
       <div className="filters-panel">
         <SearchBar />
-        <FiltersList products={this.props.products} categories={this.props.categories}/>
+        <FiltersList products={this.props.products} filteringCategories={this.props.filteringCategories}/>
       </div>
     );
   }
 }
-
-export default FiltersPanel;

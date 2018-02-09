@@ -1,17 +1,16 @@
 import React, {Component} from 'react';
 
-class Filter extends Component {
+export default class Filter extends Component {
 
   constructor(props) {
     super(props);
   }
 
   render() {
-
     return (
-      <li className="filters-item"></li>
+      <li className="filters-item">
+        {this.props.filter} ({this.props.count})
+      </li>
     );
   }
 }
-
-export default Filter;

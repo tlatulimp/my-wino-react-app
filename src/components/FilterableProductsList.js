@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import ProductsList from './ProductsList';
 import FiltersPanel from './FiltersPanel';
+import SortingSelect from './SortingSelect';
 
-class FilterableProductsList extends Component {
+export default class FilterableProductsList extends Component {
 
   constructor(props) {
     super(props);
@@ -11,11 +12,12 @@ class FilterableProductsList extends Component {
   render() {
     return (
       <div className="filterable-products-list">
-        <FiltersPanel products={this.props.products} categories={this.props.categories}/>
-        <ProductsList products={this.props.products}/>
+        <FiltersPanel products={this.props.products} filteringCategories={this.props.filteringCategories}/>
+        <div className="sortable-products">
+          <SortingSelect />
+          <ProductsList products={this.props.products}/>
+        </div>
       </div>
     );
   }
 }
-
-export default FilterableProductsList;

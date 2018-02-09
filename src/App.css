@@ -10,12 +10,13 @@
 
 .filterable-products-list {
   display: flex;
+  align-items: flex-start;
 }
 
 .product-item {
   box-sizing: border-box;
   border: 10px solid red;
-  flex: 1 0 400px;
+  flex: 1 1 400px;
 }
 
 ul {
@@ -33,8 +34,34 @@ ul {
 
 .search-bar {
   border: 10px solid orange;
+  width: 100%;
 }
 
 .filters-category {
   border: 10px solid rebeccapurple;
+  margin: 5px 0;
+}
+
+.filters-category:first-child {
+  margin-top: 0;
+}
+
+.filters-category:last-child {
+  margin-bottom: 0;
+}
+
+.filters-category__title {
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 4px;
+}
+
+.filters-item {
+  border: 2px dashed chocolate;
+  margin: 4px;
+  padding: 4px;
+}
+
+.sortable-products {
+  flex-grow: 1;
 }
